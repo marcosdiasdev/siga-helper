@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>SIGA</title>
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/popup.css" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <body>
+        <main>
+            <section id="contentArea">
+                <h1 id="title"></h1>
+                <div id="conteudoOptionsBox" style="display: none;">
+                    <div>
+                        <p>
+                            Aulas por encontro: <input id="contAulas" type="number" class="form-control" min="1" max="4" value="2">
+                        </p>
+                    </div>
+                    <button id="getDatesBtn" class="btn btn-primary">Obter Datas</button>
+                    <textarea id="textAreaConteudo" class="form-control" disabled></textarea>
+                </div>
+                <div id="planoOptionsBox" style="display: none;">
+                    <button id="updateContentBtn" class="btn btn-warning" disabled>Alterar Atividades</button>
+                    <textarea id="textAreaPlano" class="form-control"></textarea>
+                </div>
+            </section>
+            <section id="msgArea">
+                <p id="pageMsgArea"></p>
+                <p id="rowMsgArea"></p>
+            </section>
+        </main>
+        <script src="vendor/jquery-3.3.1.slim.min.js"></script>
+        <script src="vendor/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.js"></script>        
+        <script type="text/javascript" src="assets/js/popup.js"></script>
+    </body>
+</html>
