@@ -13,12 +13,9 @@ const contAulas = document.getElementById("contAulas");
 
 const updateContentBtn = document.getElementById("updateContentBtn");
 const rowMsgArea = document.getElementById("rowMsgArea");
-const atividadesInPage = 0;
+let atividadesInPage = 0;
 
 chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
-    
-    
-
     let url = tabs[0].url;
     let pageTitle = tabs[0].title;
 
