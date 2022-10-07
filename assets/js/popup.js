@@ -1,19 +1,19 @@
-var mainURL = "https://sigaprof.ifto.edu.br";
-var conteudoPageTitle = "Diários-EDU :: Conteúdo";
-var planoDeEnsinoPageTitle = "Diários-EDU :: Plano de Ensino";
+const mainURL = "https://sigaprof.ifto.edu.br";
+const conteudoPageTitle = "Diários-EDU :: Conteúdo";
+const planoDeEnsinoPageTitle = "Diários-EDU :: Plano de Ensino";
 
-var contentArea = document.getElementById("contentArea");
-var title = document.getElementById("title");
-var pageMsgArea = document.getElementById("pageMsgArea");
-var textAreaPlano = document.getElementById("textAreaPlano");
-var textAreaConteudo = document.getElementById("textAreaConteudo");
+const contentArea = document.getElementById("contentArea");
+const title = document.getElementById("title");
+const pageMsgArea = document.getElementById("pageMsgArea");
+const textAreaPlano = document.getElementById("textAreaPlano");
+const textAreaConteudo = document.getElementById("textAreaConteudo");
 
-var getDatesBtn = document.getElementById("getDatesBtn");
-var contAulas = document.getElementById("contAulas");
+const getDatesBtn = document.getElementById("getDatesBtn");
+const contAulas = document.getElementById("contAulas");
 
-var updateContentBtn = document.getElementById("updateContentBtn");
-var rowMsgArea = document.getElementById("rowMsgArea");
-var atividadesInPage = 0;
+const updateContentBtn = document.getElementById("updateContentBtn");
+const rowMsgArea = document.getElementById("rowMsgArea");
+const atividadesInPage = 0;
 
 chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
     
